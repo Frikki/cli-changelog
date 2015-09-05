@@ -52,10 +52,10 @@ function commit(releaseVersion) {
 }
 
 function release(version, fileName) {
-  //prerelease();
+  prerelease();
   var releaseVersion = bump(version);
   changelog(releaseVersion, fileName);
-  //commit(releaseVersion);
+  commit(releaseVersion);
 }
 
 release(process.argv[2], process.argv[3]);
