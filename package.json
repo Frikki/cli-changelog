@@ -1,0 +1,36 @@
+{
+  "name": "cli-changelog",
+  "version": "0.0.0",
+  "author": "Frederik Krautwald",
+  "description": "A CLI tool for automatically creating change logs from commit messages.",
+  "license": "MIT",
+  "bugs": "https://github.com/Frikki/cli-changelog/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frikki/cli-changelog"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "commit messages",
+    "changelog",
+    "change log",
+    "history",
+    "release history"
+  ],
+  "bin": {
+    "changelog": "./bin/changelog.js"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34"
+  },
+  "devDependencies": {
+    "validate-commit-message": "^2.0.0"
+  },
+  "scripts": {
+    "patch": "node release.js patch",
+    "minor": "node release.js minor",
+    "major": "node release.js major",
+    "init": "npm install && validate-commit-msg"
+  }
+}
