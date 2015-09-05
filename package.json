@@ -25,6 +25,7 @@
     "bluebird": "^2.9.34"
   },
   "devDependencies": {
+    "shelljs": "^0.5.3",
     "validate-commit-message": "^2.0.0"
   },
   "scripts": {
