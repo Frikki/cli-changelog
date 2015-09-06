@@ -4,7 +4,7 @@ A CLI tool for automatically creating change logs from commit messages.
 ## Installation
 
 ```shell
-$ npm install cli-changelog
+$ npm install cli-changelog -g
 ```
 
 ## Usage
