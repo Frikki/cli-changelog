@@ -22,16 +22,20 @@
     "changelog": "./bin/changelog.js"
   },
   "dependencies": {
-    "bluebird": "^2.9.34"
+    "bluebird": "^2.9.34",
+    "validator": "^4.0.5"
   },
   "devDependencies": {
     "cli-release": "^1.0.2",
+    "faucet": "0.0.1",
+    "tape": "^4.2.0",
     "validate-commit-message": "^2.0.0"
   },
   "scripts": {
+    "test": "./lib/changelog.test.js | faucet",
+    "start": "npm install && validate-commit-msg",
     "patch": "release patch",
     "minor": "release minor",
-    "major": "release major",
-    "init": "npm install && validate-commit-msg"
+    "major": "release major"
   }
 }

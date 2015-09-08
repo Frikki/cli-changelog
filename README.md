@@ -10,5 +10,5 @@ $ npm install cli-changelog -g
 ## Usage
 
 ```shell
-$ changelog {version} [file] 
+$ changelog {version} [file]
 ```
